@@ -42,7 +42,10 @@ namespace DepotDownloader
         public static void LoadFromFile(string filename)
         {
             if (Loaded)
-                throw new Exception("Config already loaded");
+            {
+                // throw new Exception("Config already loaded");
+                return;
+            }
 
             if (IsolatedStorage.FileExists(filename))
             {

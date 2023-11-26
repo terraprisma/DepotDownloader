@@ -11,9 +11,9 @@ using SteamKit2;
 
 namespace DepotDownloader
 {
-    class Program
+    public class Program
     {
-        static int Main(string[] args)
+        public static int Main(string[] args)
             => MainAsync(args).GetAwaiter().GetResult();
 
         static async Task<int> MainAsync(string[] args)
